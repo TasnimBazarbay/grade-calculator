@@ -44,6 +44,12 @@ int readScore(int scoreNumber)
         cout << "Score " << scoreNumber << ": ";
         cin >> score;
 
+        // Skip spaces and tabs after the number, so "95 " is accepted.
+        while (cin.peek() == ' ' || cin.peek() == '\t')
+        {
+            cin.get();
+        }
+
         // Letters, or extra text after the number (for example 95.5 or 9a).
         bool isBadInput = cin.fail() || (cin.peek() != '\n' && cin.peek() != EOF);
 
@@ -67,6 +73,7 @@ int readScore(int scoreNumber)
     }
 }
 
+// Reads students until the teacher types "end", then prints the class summary.
 int main()
 {
     int studentCount = 0;
