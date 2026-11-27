@@ -22,4 +22,4 @@ Grade Calculator is a small console program in C++ for teachers. The teacher typ
 2. Paste the code from main.cpp and click Run.
 
 ## Author
-Tasnim Bazarbay, group SP-1/25
+Tasnim Bazarbay and Aruzhan Dzhanai, group SP-1/25
