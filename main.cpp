@@ -13,19 +13,22 @@ using namespace std;
 const int SCORE_COUNT = 5;
 const int MIN_SCORE = 0;
 const int MAX_SCORE = 100;
+const double GRADE_A_MIN = 90.0;
+const double GRADE_B_MIN = 75.0;
+const double GRADE_C_MIN = 60.0;
 
 // Returns the letter grade for an average score.
 string getGrade(double average)
 {
-    if (average >= 90.0)
+    if (average >= GRADE_A_MIN)
     {
         return "A";
     }
-    else if (average >= 75.0)
+    else if (average >= GRADE_B_MIN)
     {
         return "B";
     }
-    else if (average >= 60.0)
+    else if (average >= GRADE_C_MIN)
     {
         return "C";
     }
