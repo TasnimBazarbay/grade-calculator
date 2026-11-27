@@ -1,4 +1,4 @@
-# Grade Calculator for Teachers
+# Grade Calculator for Teachers (C++ console app)
 
 Grade Calculator is a small console program in C++ for teachers. The teacher types a student's name and 5 scores, and the program shows the student's average and grade. Several students can be entered in one run; at the end the program shows how many students were entered and the class average.
 
